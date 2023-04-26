@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--https://fredriksfika.allas.se/fredriks-brod/scones-recept-pa-enkla-scones/-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My favorite recipes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My favorite recipes</h1>
+
+    </header>
+    <nav>
+        <a href="first-index.html">Home</a>
+        <a href="#">More recipes</a>
+        <a href="#">link-1</a>
+        <a href="#">link-2</a>
+    </nav>
+    <section>
+        
+          <!--recipe description-->
+            <article>
+                <h2> Warm freshly baked scones for breakfast are weekend luxury!</h2>
+                
+                <div class="picture-collection">
+                    <img class="picture1" src="sco1.jpg">
+                    <img class="picture2" src="sco2.jpg">
+                    </div>
+                
+                
+                <h2> Scones, 4 st /cooking time 25 minutes/</h2>
+                <p>
+                    <form>
+                        <label for="portions">
+                            <h3>Choose portions:</h3>
+                        </label>
+                        <input type="number" id="portions" name="portions" min="1" value="1">
+                    </form> 
+                        <h3>Ingredients:</h3>
+                    <ul id="ingredients-list">
+                        <li><span id="wheat-flour">4</span> dl wheat flour</li>
+                        <li><span id="baking-powder">2</span> tsp baking powder</li>
+                        <li><span id="salt">1/2</span> tsp salt</li>
+                        <li><span id="butter">50</span> g of butter</li>
+                        <li><span id="milk">2</span> dl milk</li>
+                    </ul>
+                        <h3>Do this:</h3>
+                      <ol>
+                        <li>Set the oven to 250 degrees.</li>
+                        <li>Mix wheat flour, baking powder and salt in a bowl. Finely distribute the butter into the flour mixture.</li>
+                        <li>Add milk and quickly stir into a sticky dough.</li>
+                        <li>Tip out the dough onto a sheet of baking paper. With a little flour on your fingers, press it out into a circle about 30 cm in diameter. Cut the bread into 4 equal parts.</li>
+                        <li>Bake in the middle of the oven for 10-12 minutes.</li>
+                      </ol>
+                </p> 
+                <div>
+                    <h2>Comments:</h2>
+                    <form>
+                      
+                      <label for="name">Your name:</label>
+                      <input type="text" id="name" name="name">
+                      <br>
+                      <label for="comment">Comment:</label>
+                      <textarea id="comment" name="comment" rows="4" cols="33"></textarea>
+                      <br>
+                      <button type="button" onclick="addComment()">Send</button>
+                      
+                    </form>
+                    <div id="comments-list"></div>
+                </div>    
+                    
+            </article>    
+    </section>         
+            
+    <script src="appScones.js"></script>   
+        
+</body>
+</html>        
+    
+    
